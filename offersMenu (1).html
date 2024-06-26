@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foody</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #f5f5f5;
+        }
+
+        header {
+            background-color: #1f1f1f;
+            color: #fff;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .logo i {
+            margin-right: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav li {
+            margin-right: 20px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        nav a:hover {
+            color: #ff6347;
+        }
+        
+        .article-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            background-color: #121212;
+            padding: 20px;
+        }
+
+        .article-item img {
+            width: 100px;
+            height: 100px;
+            border-radius: 10%;
+            margin-bottom: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .article-item img:hover {
+            transform: scale(1.1);
+        }
+
+        .article-item h2 {
+            margin-bottom: 10px;
+        }
+
+        .article-item p {
+            margin-bottom: 10px;
+        }
+
+        .article-row {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+
+        .article-item {
+            width: calc(25% - 40px);
+            margin: 10px 20px;
+            padding: 20px;
+            border: 1px solid #333;
+            border-radius: 8px;
+            text-align: center;
+            box-sizing: border-box;
+            background-color: #1f1f1f;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .article-item:hover {
+            transform: translateY(-5px);
+            background-color: #2c2c2c;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+
+        .image-column {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .small-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 8px;
+        }
+
+        .large-image {
+            width: 400px;
+            height: 410px;
+            border-radius: 8px;
+        }
+
+        aside {
+            background-color: #1f1f1f;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px;
+        }
+
+        footer {
+            background-color: #1f1f1f;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .copyright {
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <i class='bx bxs-pizza'></i> Foody
+        </div>
+        <nav>
+             <li><a href="file:///C:/Users/LAB503/Downloads/burger.html#">Home</a></li>
+                <li><a href="file:///C:/Users/LAB503/Downloads/offersMenu%20(1).html">Menu & Offers</a></li>
+                <li><a href="file:///C:/Users/LAB503/Desktop/aboutus.html">About Us</a></li>
+                <li><a href="file:///C:/Users/LAB503/Downloads/login.html">login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <article>
+        <div class="article-content">
+            <div class="article-row">
+                <div class="article-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpjPUdL0kQjoHuorlnxyn3mGfaaRMV1bzhbA&s" alt="Food Image">
+                    <h2>Food Item 1</h2>
+                    <p>Food Item 1 Description</p>
+                    <p>Price: $10</p>
+                     <button class="buy-button">Buy Now</button>
+                </div>
+                <div class="article-item">
+                    <img src="https://i0.wp.com/s3.ap-south-1.amazonaws.com/img.paisawapas/images/2023/09/29145733/Burger-King-Tasty-Meals%4099-Menu.jpg?resize=614%2C345&ssl=1" alt="Food Image">
+                    <h2>Food Item 2</h2>
+                    <p>Food Item 2 Description</p>
+                    <p>Price: $15</p>
+                    <button class="buy-button">Buy Now</button>
+                </div>
+                <div class="article-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSopObTDUTIoguLBVLxKwEzFfgDedyl05bCUw&s" alt="Food Image">
+                    <h2>Food Item 3</h2>
+                    <p>Food Item 3 Description</p>
+                    <p>Price: $12</p>
+ <button class="buy-button">Buy Now</button>
+                </div>
+                <div class="article-item">
+                    <img src="https://vegnews.com/media/W1siZiIsIjM5NjE1L1ZlZ05ld3MuUmVhbENoZWVzZWJ1cmdlclRoYWlsYW5kMS5CdXJnZXJLaW5nLmpwZyJdLFsicCIsIm9wdGltaXplIl1d/VegNews.RealCheeseburgerThailand1.BurgerKing.jpg?sha=3a7efe3751f7b2ed" alt="Food Image">
+                    <h2>Dora Cake</h2>
+                    <p>Food Item 4 Description</p>
+                    <p>Price: $18</p>
+ <button class="buy-button">Buy Now</button>
+                </div>
+                <div class="article-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-9Sqor8aQf6Jk240izUIkz-NQmZZXfFQJXg&s" alt="Food Image">
+                    <h2>THE REAL ALL CHEESE BURGER</h2>
+                    <p>Food Item 5 Description</p>
+                    <p>Price: $20</p>
+ <button class="buy-button">Buy Now</button>
+                </div>
+                <div class="article-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmv3cJtVX1dtCiEt40VelrtLmnMeqZocxlY1Hbqlr5kZ-PNF4rloIdT0xr3JqqetXBxNw&usqp=CAU" alt="Food Image">
+                    <h2>Food Item 6</h2>
+                    <p>Food Item 6 Description</p>
+                    <p>Price: $22</p>
+ <button class="buy-button">Buy Now</button>
+                </div>
+                <div class="article-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmv3cJtVX1dtCiEt40VelrtLmnMeqZocxlY1Hbqlr5kZ-PNF4rloIdT0xr3JqqetXBxNw&usqp=CAU" alt="Food Image">
+                    <h2>Food Item 7</h2>
+                    <p>Food Item 7 Description</p>
+                    <p>Price: $25</p>
+ <button class="buy-button">Buy Now</button>
+                </div>
+                <div class="article-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmv3cJtVX1dtCiEt40VelrtLmnMeqZocxlY1Hbqlr5kZ-PNF4rloIdT0xr3JqqetXBxNw&usqp=CAU" alt="Food Image">
+                    <h2>Food Item 8</h2>
+                    <p>Food Item 8 Description</p>
+                    <p>Price: $28</p>
+ <button class="buy-button">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <aside>
+        <h1 style="text-align:center;">Offers</h1>
+        <div class="image-container">
+            <div class="image-column">
+                <img src="https://www.adgully.com/img/800/202305/burger-king.png.jpg" alt="Image 1" class="small-image">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSDw9lpJvrM-1SCfe1iYxb-gEQugWf0mLGcHfCk0uR-i-qx5wdCTv6qgf1ATUs3B1FN64&usqp=CAU" alt="Image 2" class="small-image">
+            </div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5de6SLtQKBYc89jCvBd7BjXISOtRQJZ_5MA&s" alt="Image 3" class="large-image">
+        </div>
+        <div style="text-align:center; margin-top: 20px;">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/udZ9vEovRTA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </aside>
+
+    <footer>
+        <div class="copyright">
+            &copy; 2024 Foody. All Rights Reserved.
+        </div>
+    </footer>
+</body>
+</html>
+
+
+
+
+
